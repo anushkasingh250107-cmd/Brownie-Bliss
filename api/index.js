@@ -6,6 +6,7 @@ const axios = require('axios');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const serverless = require('serverless-http');
+const rateLimit = require('express-rate-limit');
 const adminAuth = require('../middlewares/adminAuth');
 
 const app = express();
